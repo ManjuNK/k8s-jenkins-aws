@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jhooq-springboot
+  name: manju-springboot
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: jhooq-springboot
+      app: manju-springboot
   template:
     metadata:
       labels:
-        app: jhooq-springboot
+        app: manju-springboot
     spec:
       containers:
         - name: springboot
